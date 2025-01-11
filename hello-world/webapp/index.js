@@ -1,14 +1,10 @@
 sap.ui.define([
-	"sap/m/Button",
-	"sap/m/MessageToast"
-], (Button, MessageToast) => {
+	"sap/m/Text"
+], (Text) => {
 	"use strict";
 
-	new Button({
-		text: "Ready...",
-		press() {
-			MessageToast.show("Hello World!");
-		}
+	new Text({
+		text: "Hello World"
 	}).placeAt("content");
 
 });
